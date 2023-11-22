@@ -45,7 +45,7 @@ To establish the robustness of the machine learning model, the dataset underwent
 For a user-friendly experience, a web interface has been integrated to allow users to input their preferences for cuisine, location, and price. The system dynamically generates personalized restaurant recommendations through the web page, providing an interactive and accessible platform for users.
 
 ![image](https://github.com/Madhugupta95/Swiggy_Recommendation_Models/assets/117964914/f701b15c-f7ac-4879-a3da-eed40abc8ebf)
-![image](https://github.com/Madhugupta95/Swiggy_Recommendation_Models/assets/117964914/85c9ad84-b2b9-4d23-b278-aec85e3b00c4)
+ ![image](https://github.com/Madhugupta95/Swiggy_Recommendation_Models/assets/117964914/85c9ad84-b2b9-4d23-b278-aec85e3b00c4)
 
 
 
