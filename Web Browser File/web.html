@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy Recommendation</title>
+    <style>
+        #container{
+            border:1px solid black;
+            background-color: #fff;
+            padding: 20px;
+            margin:20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .heading{
+            background-color:orange ;
+            color: #fff;;
+            height:50px;
+            margin-top: -20px;
+            text-align: center;
+            padding: 20px
+        }
+        .price{
+            display: flex;
+            justify-content: space-between;
+            grid-gap:40px;
+            margin-top:20px
+        }
+        .body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .btn-submit {
+            background-color: #ff3e3e;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-submit:hover {
+            background-color: #e60000;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+
+        h2{
+            font-size: 24px;
+            margin: 0;       
+        }
+        
+        h3 {
+            font-size: 18px;
+        }
+            
+        header {
+            background-color: #ff3e3e;
+            color: #fff;
+            text-align: center;
+            padding: 40px;
+        }
+        .left-side{
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 20px;      
+        }
+        .right-side {
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 20px;
+        }   
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        } 
+        .custom-class {
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 10px;
+        }
+        p {
+            color: #007bff;   
+        }
+        .heading img {
+            float: right; /* Align the image to the left */
+            margin-right: 10px;
+            vertical-align: middle;
+        } 
+
+</style>
+</head>
+<body>
+    <form method="POST",action="{{ url_for('web') }}">
+    <div id="container">
+        <div class="heading"> 
+          <img src="data:image/png;base64,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" alt="Logo">
+    <h2 style="padding:10px">Swiggy Recommendation Model</h2>
+</div>
+<div>
+    <h3>Cusine: <input type='text' name="cusine"/></h3>
+    <div class="price">
+    <div>
+    <h3>Prefered Price for 1: <input type='text' name="price"/></h3></div>
+    <div>
+    <h3>Prefered Location: <input type='text' name="loc"/></h3>
+    </div>
+    <input type="submit" value="Predict">
+    </div>
+</div>
+<hr>
+<div class="left-side">
+<p style="color:blue"><b>Based on your prefered Location</b></p>
+<h4>Average Price for 1:
+    <input type="text" name="price_pred" 
+    value="{{ predict }}" readonly>
+</h4>
+<h4>Popular Cusine:
+    <input name="popular_cuisine"
+    value="{{ predict_1 }}" readonly/>
+</h4>
+</h4>
+<h4>
+    Most Popular Restaurant:
+    <input name="most_pop_res"
+    value="{{ predict_5 }}" readonly>
+</h4>
+<h4> Serves:
+    <input name="serves"
+    value="{{ predict_3 }}" readonly>
+</h4>
+<h4>Popular Restaurant that serves your Cuisine:
+    <input name="popular_restaurent"
+    value="{{ predict_4 }}" readonly>
+</h4>
+</div>
+    </div>
+<div class="right-side">
+    <p style="color:blue"><h4>Recommendations</h4></p>
+    <h4>Recommended Location:
+    <input name="Most_popular_cuisine" value="{{ predict_2 }}" readonly>
+    </h4>
+    <h4>
+        Recommended Price:
+        <input name="rec_price" value="{{ predict_6 }}" readonly>
+    </h4>
+   </div>
+</div>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
