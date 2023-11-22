@@ -33,6 +33,23 @@ A brief exchange during the development process:
 ![image](https://github.com/Madhugupta95/Swiggy_Recommendation_Models/assets/117964914/f457d8ba-8f59-469b-bdad-78ebfbc94c89)
 ![image](https://github.com/Madhugupta95/Swiggy_Recommendation_Models/assets/117964914/6ae3d3e9-656f-48d9-9f3d-efb7054bcb1a)
 
+## Model Training and Testing 📚
+
+### Data Split for Model Training and Evaluation
+
+To establish the robustness of the machine learning model, the dataset underwent a careful division into training and testing sets. This pivotal step ensures the model's ability to generalize to new, unseen data.
+![image](https://github.com/Madhugupta95/Swiggy_Recommendation_Models/assets/117964914/00b1a3b3-b9bb-47ce-96bf-4237ce1bde79)
+
+## Web Page Integration 💻
+
+For a user-friendly experience, a web interface has been integrated to allow users to input their preferences for cuisine, location, and price. The system dynamically generates personalized restaurant recommendations through the web page, providing an interactive and accessible platform for users.
+
+![image](https://github.com/Madhugupta95/Swiggy_Recommendation_Models/assets/117964914/f701b15c-f7ac-4879-a3da-eed40abc8ebf)
+![image](https://github.com/Madhugupta95/Swiggy_Recommendation_Models/assets/117964914/85c9ad84-b2b9-4d23-b278-aec85e3b00c4)
+
+
+
+
 
 
 
