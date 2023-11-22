@@ -53,7 +53,7 @@ The result of this project is the generation of detailed recommendations based o
 
 ![image](https://github.com/Madhugupta95/Swiggy_Recommendation_Models/assets/117964914/71f0320f-26c1-4be7-a95d-8719a57f4ca7)
 
-* Overcoming Data Retrieval Challenges ⚙️
+## Overcoming Data Retrieval Challenges ⚙️
 
 Data Extraction Challenges
 
