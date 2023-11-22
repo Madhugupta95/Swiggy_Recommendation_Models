@@ -53,19 +53,19 @@ The result of this project is the generation of detailed recommendations based o
 
 ![image](https://github.com/Madhugupta95/Swiggy_Recommendation_Models/assets/117964914/71f0320f-26c1-4be7-a95d-8719a57f4ca7)
 
-## Overcoming Data Retrieval Challenges ⚙️
+** Overcoming Data Retrieval Challenges ⚙️
 
-### Data Extraction Challenges
+Data Extraction Challenges
 
 Acquiring pertinent and precise data from Swiggy's website posed initial hurdles due to the site's intricate structure.
 
-## Navigating the Model Selection Maze ⚖️
+** Navigating the Model Selection Maze ⚖️
 
 ### Model Selection Dilemma
 
 The process of choosing the optimal machine learning model for restaurant recommendations demanded thoughtful consideration and experimentation.
 
-## Crafting the Web Interface 🛠️
+** Crafting the Web Interface 🛠️
 
 ### Web Page Development Hurdles
 
