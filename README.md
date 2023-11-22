@@ -57,19 +57,19 @@ The result of this project is the generation of detailed recommendations based o
 
 * Data Extraction Challenges
 
-Acquiring pertinent and precise data from Swiggy's website posed initial hurdles due to the site's intricate structure.
+   - Acquiring pertinent and precise data from Swiggy's website posed initial hurdles due to the site's intricate structure.
 
 ## Navigating the Model Selection Maze ⚖️
 
 * Model Selection Dilemma
 
-The process of choosing the optimal machine learning model for restaurant recommendations demanded thoughtful consideration and experimentation.
+   - The process of choosing the optimal machine learning model for restaurant recommendations demanded thoughtful consideration and experimentation.
 
 ## Crafting the Web Interface 🛠️
 
 * Web Page Development Hurdles
 
-Embarking on the creation of an interactive web interface with HTML, CSS, and Python presented design and implementation challenges.
+   - Embarking on the creation of an interactive web interface with HTML, CSS, and Python presented design and implementation challenges.
 
 
 
