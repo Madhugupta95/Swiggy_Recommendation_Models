@@ -47,6 +47,28 @@ For a user-friendly experience, a web interface has been integrated to allow use
 ![image](https://github.com/Madhugupta95/Swiggy_Recommendation_Models/assets/117964914/f701b15c-f7ac-4879-a3da-eed40abc8ebf)
  ![image](https://github.com/Madhugupta95/Swiggy_Recommendation_Models/assets/117964914/85c9ad84-b2b9-4d23-b278-aec85e3b00c4)
 
+ ## Outcome 📊
+
+The result of this project is the generation of detailed recommendations based on user input. These insights are designed to assist aspiring restaurant owners in making informed decisions regarding critical elements such as cuisine selection, pricing strategies, optimal locations, and more.
+
+![image](https://github.com/Madhugupta95/Swiggy_Recommendation_Models/assets/117964914/71f0320f-26c1-4be7-a95d-8719a57f4ca7)
+
+## Challenges 🛠️
+
+### Data Extraction Challenges
+
+Extracting relevant and accurate data from Swiggy's website presented initial challenges due to the site's structure.
+
+### Model Selection Dilemma
+
+Choosing the perfect machine learning model for restaurant recommendations required careful consideration and experimentation.
+
+### Web Page Development Hurdles
+
+Creating an interactive web interface with HTML, CSS, and Python posed design and implementation challenges.
+
+
+
 
 
 
